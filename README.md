@@ -1,6 +1,7 @@
 # CN4Mat
 Convolution Neural Networks for Matlab
-1. 简介
+
+1 简介
 
     此工具箱适用于Matlab环境下卷积神经网络的构造和学习，参考了rasmusbergpalm的DeepLearnToolbox[1]，并借鉴了 caffe的一些思想。相比于原始的CNN框架，添加了许多新的网络结构，适合新手入门，了解各个构件的连接方式、前向传播和反向传播的计算过程，方便以后造轮子~~
     
@@ -20,7 +21,8 @@ Convolution Neural Networks for Matlab
 
 【MatConvNet】http://www.vlfeat.org/matconvnet/
 
-2.使用方法
+
+2 使用方法
 
 2.1 卷积层 
 
@@ -104,6 +106,7 @@ Convolution Neural Networks for Matlab
 
 注：损失层之前必须接一个全连接层，且特征数目等于类别数目（one vs all）
 
+
 3 版本更新
 
 时间	更新内容
@@ -120,10 +123,12 @@ Convolution Neural Networks for Matlab
 2. 添加Dropout层
 3. 并行化
 
-4. Bug
+
+4 Bug
 
 现阶段，所有层都已通过数值梯度检查，欢迎大家举报bug，联系我：
 vivi_liu65@163.com 
+
 
 5. 参考
 
