@@ -29,6 +29,7 @@ parameters	arguments
 'stride'	步长尺寸，如2（方形），[2,1]（矩形），默认为[1,1]
 'pad'	外部填充尺寸，如2（方形），[2,1]（矩形），默认为[0,0]
 注：转置卷积层只是转置卷积操作，没有激活函数
+
 2.3 池化层
 parameters	arguments
 'type' 	类型，'pool'
