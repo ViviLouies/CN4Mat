@@ -123,7 +123,7 @@ Convolution Neural Networks for Matlab
 4. Bug
 
 现阶段，所有层都已通过数值梯度检查，欢迎大家举报bug，联系我：
-Vivi_liu65@163.com 
+vivi_liu65@163.com 
 
 5. 参考
 
