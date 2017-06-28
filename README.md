@@ -25,6 +25,7 @@ Convolution Neural Networks for Matlab
 2.1 卷积层 
 
 'type' 	类型，'conv'
+
 'featuremaps'	特征数目（即卷积核数目），如 10
 
 'kernelsize'	卷积核尺寸，如3（方形），[3,4]（矩形）
