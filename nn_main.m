@@ -1,5 +1,5 @@
 close all;clear;clc;
-%ÍøÂç¶¨Òå
+%ç½‘ç»œå®šä¹‰
 cnn.layers = {
     struct('type', 'input') %input layer
     struct('type', 'conv', 'featuremaps', 6, 'kernelsize', [5,5], 'stride', 1) %convolution layer
@@ -22,14 +22,14 @@ cnn.layers = {
     struct('type', 'fc', 'featuremaps', 10) %full connecting layer
     struct('type', 'loss','function', 'softmax') %loss layer
     };
-%ÑµÁ·²ÎÊı¶¨Òå
-opts.alpha = 0.5;   %³õÊ¼Ñ§Ï°ÂÊ
-opts.momentum = 0.5;  %³õÊ¼¶¯Á¿ÏîÈ¨Öµ
-opts.batchnum = 1000; %Åú´óĞ¡
-opts.numepochs = 40;  %µü´ú´ÎÊı
+%è®­ç»ƒå‚æ•°å®šä¹‰
+opts.alpha = 0.5;   %åˆå§‹å­¦ä¹ ç‡
+opts.momentum = 0.5;  %åˆå§‹åŠ¨é‡é¡¹æƒå€¼
+opts.batchnum = 1000; %æ‰¹å¤§å°
+opts.numepochs = 10;  %è¿­ä»£æ¬¡æ•°
 
-%µ¼ÈëÊı¾İºÍÀà±ê(one vs all)
-load mnist_uint8.mat; %¼ÓÔØÊı¾İ¼¯ 
+%å¯¼å…¥æ•°æ®å’Œç±»æ ‡(one vs all)
+load mnist_uint8.mat; %åŠ è½½æ•°æ®é›† 
 train_data = double(reshape(train_x',28,28,60000))/255;
 test_data = double(reshape(test_x',28,28,10000))/255;
 train_label = double(train_y');
@@ -37,11 +37,11 @@ test_label = double(test_y');
 numClasses = 10;
 [height,width,datanum] = size(train_data);
 batchsize = [height,width,opts.batchnum];
-% ½¨Á¢CNNÍøÂç
-inputSize = batchsize; %ÊäÈëÍ¼Æ¬´óĞ¡
-outputSize = numClasses; %Êä³öÀà±ğÊıÄ¿
+% å»ºç«‹CNNç½‘ç»œ
+inputSize = batchsize; %è¾“å…¥å›¾ç‰‡å¤§å°
+outputSize = numClasses; %è¾“å‡ºç±»åˆ«æ•°ç›®
 cnn= nn_setup(cnn, inputSize, outputSize);
-% ÑµÁ·ÍøÂç
+% è®­ç»ƒç½‘ç»œ
 cnn = nn_train(cnn,train_data,train_label,opts);
-% ²âÊÔÍøÂç
+% æµ‹è¯•ç½‘ç»œ
 [accuracy, index] = nn_test(cnn,test_data,test_label);
