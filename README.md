@@ -95,6 +95,7 @@ Convolution Neural Networks for Matlab
 
 - 目前仅支持带动量项的随机梯度下降法（mini-batch）
 - 训练参数**opt**定义如下:
+
 |parameters |arguments
 |----------|---------|
 |opts.alpha |初始学习率
@@ -119,7 +120,7 @@ Convolution Neural Networks for Matlab
 
 # 5 Bug
 
-现阶段，所有层都已通过数值梯度检查，欢迎大家举报bug，联系我：
+现阶段，所有层都已通过数值梯度检查，欢迎大家举报bug，有问题可以随时联系我：
 vivi_liu65@163.com 
 
 # 6 参考
