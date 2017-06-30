@@ -3,10 +3,9 @@ Convolution Neural Networks for Matlab
 
 # 1 简介
 
-    此工具箱适用于Matlab环境下卷积神经网络的构造和学习，参考了rasmusbergpalm的DeepLearnToolbox[1]，并借鉴了 caffe的一些思想。相比于原始的CNN框架，添加了许多新的网络结构，适合新手入门，了解各个构件的连接方式、前向传播和反向传播的计算过程，方便以后造轮子~~
-    
+    此工具箱适用于Matlab环境下卷积神经网络的构造和学习，参考了rasmusbergpalm的DeepLearnToolbox[1]，并借鉴了 caffe的一些思想。相比于原始的CNN框架，添加了许多新的网络结构，适合新手入门，了解各个构件的连接方式、前向传播和反向传播的计算过程，方便以后造轮子~~
     此工具箱只是有助于你熟悉卷积神经网络和深度学习，鉴于Matlab的效率，不建议使用此工具箱训练较大的模型（当然，你也可以尝试并行），建议使用现在比较流行的深度学习框架:
-    
+
 【Caffe】http://caffe.berkeleyvision.org/
 
 【TensorFlow】http://tensorflow.org
@@ -23,18 +22,14 @@ Convolution Neural Networks for Matlab
 
 # 2 使用方法
 
-2.1 卷积层 
+## 2.1 卷积层 
 
-'type' 	类型，'conv'
-
-'featuremaps'	特征数目（即卷积核数目），如 10
-
-'kernelsize'	卷积核尺寸，如3（方形），[3,4]（矩形）
-
-'stride'	步长尺寸，如2（方形），[2,1]（矩形），默认为[1,1]
-
-'pad'	外部填充尺寸，如2（方形），[2,1]（矩形），默认为[0,0]
-
+|parameters |arguments
+|'type'     |类型，'conv'
+|'featuremaps'  |特征数目（即卷积核数目），如 10
+|'kernelsize'   |卷积核尺寸，如3（方形），[3,4]（矩形）
+'stride'    |步长尺寸，如2（方形），[2,1]（矩形），默认为[1,1]
+|'pad'  |外部填充尺寸，如2（方形），[2,1]（矩形），默认为[0,0]
 注：卷积层只是卷积操作，没有激活函数
 
 2.2 转置卷积层
