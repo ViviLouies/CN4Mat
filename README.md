@@ -88,7 +88,7 @@ Convolution Neural Networks for Matlab
 |----------|---------|
 |'type' |类型，'loss'
 |'featuremaps' |无需定义，默认和上一层相同
-|‘function’ |传递函数，可选‘softmax’，‘tanh’，‘relu’，‘softmax’
+|‘function’ |传递函数，可选‘sigmoid’，‘tanh’，‘relu’，‘softmax’
 |注：损失层之前必须接一个全连接层，且特征数目等于类别数目（one vs all）
 
 # 3 优化方法
@@ -109,7 +109,7 @@ Convolution Neural Networks for Matlab
 |----------|---------|
 |2016.12 |第一版，在DeepLearnToolbox上增加了矩形卷积核、max pooling，tanh传递函数，relu传递函数，softmax损失函数，非单位卷积步长，非2倍池化
 |2017.5 |添加 Batch Normalization层
-|2017.6 |第二版，模块化改写，添加转置卷积层，周围填充尺寸map，矩形池化尺寸，矩形步长
+|2017.6 |第二版，模块化改写，添加转置卷积层，周围填充尺寸pad，矩形池化尺寸，矩形步长
 
 待优化：
 
