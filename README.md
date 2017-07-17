@@ -20,7 +20,7 @@ Convolution Neural Networks for Matlab
 
 【MatConvNet】http://www.vlfeat.org/matconvnet/
 
-# 2 使用方法
+# 2 网络介绍
 
 ## 2.1 卷积层 
 
@@ -103,7 +103,13 @@ Convolution Neural Networks for Matlab
 |opts.batchnum |batch大小
 |opts.numepochs |迭代次数
 
-# 4 版本更新
+# 4 使用方法
+-参考nn_main.m文件，在网络结构定义中修改网络结构
+-修改数据读取接口部分
+-修改opts中的训练参数
+-具体的训练过程和测试过程，详见nn_train.m文件和nn_test.m文件
+
+# 5 版本更新
 
 |时间 |更新内容
 |----------|---------|
@@ -118,12 +124,12 @@ Convolution Neural Networks for Matlab
 3. 多优化策略
 4. 并行化
 
-# 5 Bug
+# 6 Bug
 
-现阶段，所有层都已通过数值梯度检查，欢迎大家举报bug，有问题可以随时联系我：
+现阶段，所有层都已通过数值梯度检查，欢迎大家举报bug，也欢迎小伙伴们加入，继续优化，随时联系：
 vivi_liu65@163.com 
 
-# 6 参考
+# 7 参考
 
 [1] https://github.com/rasmusbergpalm/DeepLearnToolbox
 
