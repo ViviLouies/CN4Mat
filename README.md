@@ -104,10 +104,10 @@ Convolution Neural Networks for Matlab
 |opts.numepochs |迭代次数
 
 # 4 使用方法
--参考nn_main.m文件，在网络结构定义中修改网络结构
--修改数据读取接口部分
--修改opts中的训练参数
--具体的训练过程和测试过程，详见nn_train.m文件和nn_test.m文件
+- 参考nn_main.m文件，在网络结构定义中修改网络结构
+- 修改数据读取接口部分
+- 修改opts中的训练参数
+- 具体的训练过程和测试过程，详见nn_train.m文件和nn_test.m文件
 
 # 5 版本更新
 
